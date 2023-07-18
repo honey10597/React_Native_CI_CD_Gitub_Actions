@@ -1,12 +1,12 @@
 name: react-native-android-build-apk
-# on:
-#   push:
-#     branches:
-#       - main
 on:
-  workflow_dispatch: # To trigger manual build
-  release:
-    types: [published] # only run the workflow when a new release has been published
+  push:
+    branches:
+      - main
+# on:
+#   workflow_dispatch: # To trigger manual build
+#   release:
+#     types: [published] # only run the workflow when a new release has been published
 jobs:
   install-and-test:
     runs-on: ubuntu-latest
